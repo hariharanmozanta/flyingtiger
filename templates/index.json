@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Have a sparkling Xmas",
+            "heading": "<strong>Have a sparkling Xmas<\/strong>",
             "heading_size": "h1"
           }
         },
@@ -27,6 +27,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/2311_12-009_2_2929ab74-8911-4ad3-a2bd-15b10d73d45a.webp",
         "image_overlay_opacity": 40,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
