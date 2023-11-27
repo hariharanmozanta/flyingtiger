@@ -23,7 +23,7 @@
         assign show_dynamic_checkout = true
       endif
     -%}
-
+  <div class="add-to-cart-button-styles">
     <product-form
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -99,6 +99,7 @@
         </div>
       {%- endform -%}
     </product-form>
+  </div>
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">

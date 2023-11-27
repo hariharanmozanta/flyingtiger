@@ -84,7 +84,7 @@
                 class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                {{- block.settings.text -}}
+                {% comment %} {{- block.settings.text -}} {% endcomment %}
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
@@ -101,10 +101,10 @@
                   product: product,
                   use_variant: true,
                   show_badges: true,
-                  price_class: 'price--large'
+                  price_class: 'price--large' | money
                 -%}
               </div>
-              {%- if product.quantity_price_breaks_configured? -%}
+              {% comment %} {%- if product.quantity_price_breaks_configured? -%}
                 <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                   <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                 </div>
@@ -115,8 +115,8 @@
                   {%- endif -%}
                   {%- if shop.shipping_policy.body != blank -%}
                     {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- endif -%}
-                </div>
+                  {%- endif -%} {% endcomment %}
+                {% comment %} </div> {% endcomment %}
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -208,6 +208,7 @@
               </div>
             {%- when 'quantity_selector' -%}
               <div
+                style="display:inline-block;"
                 id="Quantity-Form-{{ section.id }}"
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                 {{ block.shopify_attributes }}
@@ -217,7 +218,7 @@
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
                 {% # theme-check-enable %}
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
-                  {{ 'products.product.quantity.label' | t }}
+                  {% comment %} {{ 'products.product.quantity.label' | t }} {% endcomment %}
                   <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
                     {%- render 'loading-spinner' -%}
                     <span>({{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}})</span>
@@ -410,7 +411,9 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
+            <div class="add-to-cart-styles">
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+            </div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
