@@ -41,6 +41,24 @@
             "page": ""
           }
         },
+        "14ea324c-60c1-4f2a-99fa-bc7a1be00828": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Package Dimensions",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "a984ca8c-eb5e-481d-91db-a9fbbbf0bf36": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery details",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -55,6 +73,8 @@
         "quantity_selector",
         "buy_buttons",
         "39a2fcba-f176-4f7e-9b76-83c0c272f3fe",
+        "14ea324c-60c1-4f2a-99fa-bc7a1be00828",
+        "a984ca8c-eb5e-481d-91db-a9fbbbf0bf36",
         "share"
       ],
       "settings": {
