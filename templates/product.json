@@ -20,12 +20,6 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -34,13 +28,17 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
+        "39a2fcba-f176-4f7e-9b76-83c0c272f3fe": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Product Description",
+            "icon": "none",
+            "content": "<p>Complete any look with the Co-Op Carpenter Track Pant. Designed with functionality in mind, it’s made from water-repellant fabric in a clean, straight-leg fit ideal for wearing out – plus there’s plenty of front, back and side pockets for on-the-go storage. Cargo paneling, a hammer loop detail, and button closure with a zip-fly opening finish boost the street cred.<\/p><ul><li>Cargo paneling & hammer loop detail<\/li><li>Front welt pocket, zippered side pockets & back slip pockets<\/li><li>Button closure & zip fly opening<\/li><li>Designed & uniquely fit for every size<\/li><li>Wear-tested by our in-house team for the perfect fit<\/li><\/ul>",
+            "page": ""
           }
         },
         "share": {
@@ -54,10 +52,9 @@
         "vendor",
         "title",
         "price",
-        "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        "39a2fcba-f176-4f7e-9b76-83c0c272f3fe",
         "share"
       ],
       "settings": {
