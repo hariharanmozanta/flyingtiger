@@ -25,12 +25,21 @@
             "heading": "<strong>Help and Information<\/strong>",
             "menu": "footer"
           }
+        },
+        "25bb25ff-78a9-44ce-8909-276066496301": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MicrosoftTeams-image.png",
+            "image_width": 305,
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
         "3bd095d3-b276-455e-bcab-e112ef1783a0",
         "fec4eb3d-0dee-4f66-a12f-39c72203dd61",
-        "1274a827-4ad3-4889-9a0f-5024a8692783"
+        "1274a827-4ad3-4889-9a0f-5024a8692783",
+        "25bb25ff-78a9-44ce-8909-276066496301"
       ],
       "settings": {
         "color_scheme": "background-1",
