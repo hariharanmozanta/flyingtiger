@@ -234,8 +234,11 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
-
+    
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+    <div class='header-search-styles'>
+        {% render 'header-search-additional', input_id: 'Search-In-Modal' %}
+    </div>  
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript class="small-hide medium-hide">
@@ -293,7 +296,6 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
@@ -337,6 +339,11 @@
       </a>
     </div>
   </header>
+  <div class='mega-menu-styles'>
+      {%- if section.settings.menu_type_desktop == 'drawer' %}
+          {%- render 'header-mega-menu' -%}
+      {%- endif -%}
+  </div> 
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
