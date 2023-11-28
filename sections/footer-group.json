@@ -26,12 +26,10 @@
             "menu": "footer"
           }
         },
-        "25bb25ff-78a9-44ce-8909-276066496301": {
-          "type": "image",
+        "1dba2434-ee24-4ba2-861e-1f091f5cfd99": {
+          "type": "brand_information",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MicrosoftTeams-image.png",
-            "image_width": 305,
-            "alignment": "center"
+            "show_social": true
           }
         }
       },
@@ -39,14 +37,14 @@
         "3bd095d3-b276-455e-bcab-e112ef1783a0",
         "fec4eb3d-0dee-4f66-a12f-39c72203dd61",
         "1274a827-4ad3-4889-9a0f-5024a8692783",
-        "25bb25ff-78a9-44ce-8909-276066496301"
+        "1dba2434-ee24-4ba2-861e-1f091f5cfd99"
       ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
         "newsletter_heading": "<strong>Sign up for our newsletter!<\/strong>",
         "enable_follow_on_shop": true,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": true,
         "enable_language_selector": false,
         "payment_enable": true,
