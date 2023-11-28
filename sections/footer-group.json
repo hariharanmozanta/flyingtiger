@@ -4,6 +4,34 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "3bd095d3-b276-455e-bcab-e112ef1783a0": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Flying Tiger Copenhagen<\/strong>",
+            "subtext": "<p>Explore our online universe! It’s packed with thousands of products and new limited-edition collections arrive every week. Things you need, things you dream of, things you didn’t know existed. Life is a party, and we invite you to play along. A richer life doesn’t cost a fortune.<\/p>"
+          }
+        },
+        "fec4eb3d-0dee-4f66-a12f-39c72203dd61": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>About Us<\/strong>",
+            "menu": "footer"
+          }
+        },
+        "1274a827-4ad3-4889-9a0f-5024a8692783": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>Help and Information<\/strong>",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "3bd095d3-b276-455e-bcab-e112ef1783a0",
+        "fec4eb3d-0dee-4f66-a12f-39c72203dd61",
+        "1274a827-4ad3-4889-9a0f-5024a8692783"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
