@@ -5,6 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "1dba2434-ee24-4ba2-861e-1f091f5cfd99": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
         "3bd095d3-b276-455e-bcab-e112ef1783a0": {
           "type": "text",
           "settings": {
@@ -26,12 +32,6 @@
             "menu": "footer-flying-tigers-2"
           }
         },
-        "1dba2434-ee24-4ba2-861e-1f091f5cfd99": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
-          }
-        },
         "a7e4cbe9-0f29-4b94-90bb-10303b1401fe": {
           "type": "text",
           "settings": {
@@ -41,10 +41,10 @@
         }
       },
       "block_order": [
+        "1dba2434-ee24-4ba2-861e-1f091f5cfd99",
         "3bd095d3-b276-455e-bcab-e112ef1783a0",
         "fec4eb3d-0dee-4f66-a12f-39c72203dd61",
         "1274a827-4ad3-4889-9a0f-5024a8692783",
-        "1dba2434-ee24-4ba2-861e-1f091f5cfd99",
         "a7e4cbe9-0f29-4b94-90bb-10303b1401fe"
       ],
       "settings": {
