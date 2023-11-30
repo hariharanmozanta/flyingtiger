@@ -280,7 +280,8 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  </head>
+  {% include 'sca-quick-view-init' %}
+ </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -351,5 +352,6 @@
   
 {% include 'swymSnippet' %}
 
-</body>
+{% include 'sca-quick-view-template' %} 
+ </body>
 </html>
