@@ -2,6 +2,41 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "791f5b46-fdcf-4109-a30a-6916eebb1f5b": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--16989355901169__791f5b46-fdcf-4109-a30a-6916eebb1f5b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "sections--16989355901169__791f5b46-fdcf-4109-a30a-6916eebb1f5b-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "sections--16989355901169__791f5b46-fdcf-4109-a30a-6916eebb1f5b-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--16989355901169__791f5b46-fdcf-4109-a30a-6916eebb1f5b-heading-1",
+        "sections--16989355901169__791f5b46-fdcf-4109-a30a-6916eebb1f5b-paragraph-1",
+        "sections--16989355901169__791f5b46-fdcf-4109-a30a-6916eebb1f5b-email_form-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -55,7 +90,7 @@
         "enable_follow_on_shop": true,
         "show_social": false,
         "enable_country_selector": true,
-        "enable_language_selector": false,
+        "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 0,
@@ -65,6 +100,7 @@
     }
   },
   "order": [
+    "791f5b46-fdcf-4109-a30a-6916eebb1f5b",
     "footer"
   ]
 }
