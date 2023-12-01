@@ -53,8 +53,8 @@
           {%- liquid
             if section.blocks.size == 9
               assign footer_grid_class = 'grid--3-col-tablet'
-            elsif section.blocks.size > 6
-              assign footer_grid_class = 'grid--4-col-desktop'
+            elsif section.blocks.size < 6
+              assign footer_grid_class = 'grid--5-col-desktop'
             elsif section.blocks.size > 4
               assign footer_grid_class = 'grid--3-col-tablet'
             endif
@@ -75,9 +75,10 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <div>
+                    <h2 class="footer-block__heading inline-richtext {% if block.settings.heading == 'About Us' %} heading-about-us-styles{% endif %}">{{- block.settings.heading -}}</h2>
+                  </div>
                 {%- endif -%}
-
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
@@ -87,7 +88,7 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul class="footer-block__details-content list-unstyled {% if block.settings.heading =='About Us'%} footer-list-styles{% endif %}">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -101,7 +102,7 @@
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
-                    <div class="footer-block__brand-info">
+                    <div class="footer-block__brand-info brand-information-styles">
                       {%- if settings.brand_image != blank -%}
                         {%- assign brand_image_height = settings.brand_image_width
                           | divided_by: settings.brand_image.aspect_ratio
@@ -155,24 +156,16 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%}
-          </div>
-        {%- endif -%}
-
-        <div
-          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-          {% endif %}
-        >
-          {%- if section.settings.newsletter_enable -%}
-            <div class="footer-block__newsletter">
+            <div class="newsletter-footer-allignment">
+            {%- if section.settings.newsletter_enable -%}
+            <div class="footer-block__newsletter newsletter-styles">
               {%- if section.settings.newsletter_heading != blank -%}
                 <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
               {%- endif -%}
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
-                  <div class="field">
+                  <div class="field newsletter-field">
                     <input
                       id="NewsletterForm--{{ section.id }}"
                       type="email"
@@ -206,6 +199,13 @@
                       {% render 'icon-arrow' %}
                     </button>
                   </div>
+                  <div>
+                    <select class="country-selector-styles" name="country">
+                      <option value="" disabled selected>Select a country...</option>
+                      {{ country_option_tags }}
+                    </select>
+                  </div>
+                  <button class="subscribe-button-styles" type="submit">Subscribe</button>
                   {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">
                       {%- render 'icon-error' -%}
@@ -228,6 +228,17 @@
               {%- endform -%}
             </div>
           {%- endif -%}
+          </div>
+          </div>
+        {%- endif -%}
+
+        <div
+          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+          {% endif %}
+        >
+          
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
@@ -242,18 +253,32 @@
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
+        <div>
+        {%- if section.settings.payment_enable -%}
+          <div class="footer__payment">
+            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+            <ul class="list list-payment" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li class="list-payment__item">
+                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+      </div>
       </div>
     {%- endunless -%}
   {%- endif -%}
 
-  <div
+  {% comment %} <div
     class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
-    <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__column footer__localization isolate">
+    <div class="">
+      <div class="">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
             {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
@@ -333,20 +358,6 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <div class="footer__column footer__column--info">
-        {%- if section.settings.payment_enable -%}
-          <div class="footer__payment">
-            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
-              {%- for type in shop.enabled_payment_types -%}
-                <li class="list-payment__item">
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                </li>
-              {%- endfor -%}
-            </ul>
-          </div>
-        {%- endif -%}
-      </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
@@ -369,7 +380,7 @@
         {%- endif -%}
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
 </footer>
 
 {% schema %}

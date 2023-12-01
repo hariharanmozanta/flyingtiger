@@ -207,7 +207,7 @@
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
                                 class="facets__label facet-checkbox{% if is_disabled %} facet-checkbox--disabled disabled{% endif %}{% if has_visual_display %} visual-display-parent visual-display-parent--{{ filter.presentation }}{% endif %}{% if value.active %} active{% endif %}"
-                              >
+                              > 
                                 <input
                                   type="checkbox"
                                   name="{{ value.param_name }}"
@@ -220,7 +220,6 @@
                                     disabled
                                   {% endif %}
                                 >
-
                                 {% if has_visual_display %}
                                   <div class="facets__visual-display-wrapper">
                                     {% render 'visual-display',
@@ -230,7 +229,8 @@
                                     %}
                                   </div>
                                 {% else %}
-                                  <svg
+                                  <svg 
+                                    style="background-color:{{value.label}}"
                                     width="1.6rem"
                                     height="1.6rem"
                                     viewBox="0 0 16 16"
@@ -239,22 +239,39 @@
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
-
-                                  <svg
-                                    aria-hidden="true"
-                                    class="icon icon-checkmark"
-                                    width="1.1rem"
-                                    height="0.7rem"
-                                    viewBox="0 0 11 7"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
-                                      stroke="currentColor"
-                                      stroke-width="1.75"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                  </svg>
+                                  {%- if value.label == 'Black' -%}
+                                    <svg
+                                      style="filter: invert(100%);"
+                                      aria-hidden="true"
+                                      class="icon icon-checkmark"
+                                      width="1.1rem"
+                                      height="0.7rem"
+                                      viewBox="0 0 11 7"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                        stroke="currentColor"
+                                        stroke-width="1.75"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </svg>
+                                  {%- else -%}
+                                    <svg 
+                                      style="background-color:{{value.label}}"
+                                      class="icon icon-checkmark" 
+                                      xmlns="http://www.w3.org/2000/svg" 
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                      width="12px" height="11px" 
+                                      viewBox="0 0 14 12" 
+                                      version="1.1">
+                                      <g id="PLP-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                          <g id="FT_1200px_Desktop_01_PLP_Filter_Selected" transform="translate(-50.000000, -879.000000)" fill="#000000" fill-rule="nonzero">
+                                              <polygon id="Path-Copy-4" points="51.5353084 884.553956 50 886.132257 55.3875441 891 64 880.328216 62.2280653 879 55.1269486 887.799067"></polygon>
+                                          </g>
+                                      </g>
+                                    </svg>
+                                  {%- endif -%}
                                 {% endif %}
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
