@@ -8,20 +8,36 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Free Shipping on orders above $35",
+            "link": ""
+          }
+        },
+        "46cbee76-77f4-4232-9089-686015f84c31": {
+          "type": "announcement",
+          "settings": {
+            "text": "New products every other week",
+            "link": ""
+          }
+        },
+        "04766ccc-78ee-4a25-9b43-eac917004947": {
+          "type": "announcement",
+          "settings": {
+            "text": "Delivery fee of $5",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "46cbee76-77f4-4232-9089-686015f84c31",
+        "04766ccc-78ee-4a25-9b43-eac917004947"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
