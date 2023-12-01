@@ -139,7 +139,7 @@
     "blocks": {
       "1721131375211819733": {
         "type": "shopify:\/\/apps\/smartviewer-quick-view\/blocks\/quick-view-main\/3d2a3202-3cd5-4abd-ab59-ee6fc7c65a87",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
