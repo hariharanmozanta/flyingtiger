@@ -3603,7 +3603,7 @@ details-disclosure>details {
 
 .newsletter-footer-allignment {
   position: absolute;
-  left: 114rem;
+  left: 88rem;
 }
 
 .heading-about-us-styles {
@@ -3617,3 +3617,20 @@ details-disclosure>details {
 .input-color-addition {
   background-color: #00a86b;
 }
+
+
+/* .slider-customization-1 {
+  position: relative;
+  left: 68rem;
+  top: -35rem;
+  border: 2px solid !important;
+  border-radius: 30px;
+}
+
+.slider-customization-2 {
+  position: relative;
+  left: -68rem;
+  border: 2px solid !important;
+  border-radius: 30px;
+  top: -35rem;
+} */
