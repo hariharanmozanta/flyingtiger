@@ -160,12 +160,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Find Brilliant Gadgets<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop brilliant gadgets and awesome gifts<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-heading-1",
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-text-1",
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rsz_2311-12-038.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "d31e18c4-a546-4565-8757-44de30e2ec63",
-    "94263ebc-601b-4ceb-8dcd-a48db1fa566c"
+    "94263ebc-601b-4ceb-8dcd-a48db1fa566c",
+    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab"
   ]
 }
