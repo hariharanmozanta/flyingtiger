@@ -102,7 +102,7 @@
         "template--16989356294385__94263ebc-601b-4ceb-8dcd-a48db1fa566c-column-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "<strong>Let's Play<\/strong>",
             "text": "<p>Explore our wonderland of toys<\/p>",
             "link_label": "",
             "link": ""
@@ -131,8 +131,8 @@
         "e0cdb67e-7e37-4e00-a5f0-d5ccc88c3a2a": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "<strong>Go Wrapping<\/strong>",
+            "text": "<p>Gifts need wrapping? See our vast variety of paper, bags, boxes and more<\/p>",
             "link_label": "",
             "link": ""
           }
