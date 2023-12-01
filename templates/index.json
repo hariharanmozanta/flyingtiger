@@ -291,6 +291,7 @@
         "template--16989356294385__0b500155-45d0-41be-9c30-3f12b8b243d6-buy_buttons-1",
         "template--16989356294385__0b500155-45d0-41be-9c30-3f12b8b243d6-share-1"
       ],
+      "disabled": true,
       "settings": {
         "product": "",
         "color_scheme": "",
