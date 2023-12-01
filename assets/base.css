@@ -1262,7 +1262,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button [role='button']:before,
 .cart__dynamic-checkout-buttons [role='button']:before {
   content: '';
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   bottom: 0;
@@ -1277,7 +1277,7 @@ button.shopify-payment-button__button--unbranded {
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
   content: '';
-  position: absolute;
+  /* position: absolute; */
   top: var(--buttons-border-width);
   right: var(--buttons-border-width);
   bottom: var(--buttons-border-width);
@@ -3550,4 +3550,70 @@ details-disclosure>details {
   text-transform: none;
   transition: all .3s ease;
   white-space: nowrap;
+}
+
+.highlighting-styles {
+  font-size: 1.6rem !important;
+  font-weight: bold !important;
+}
+
+.remove-button-styles {
+  position: relative;
+  top: -11.5rem;
+  left: 8rem;
+}
+
+.checkout-styles {
+  font-family: suisseintl-semibold, sans-serif;
+  font-size: 1.6rem;
+  padding: 0.82rem;
+  background-color: #00a86b;
+  color: #fff;
+  border-radius: 5rem;
+}
+
+.newsletter-styles {}
+
+.brand-information-styles {}
+
+.footer-heading-styles {}
+
+.subscribe-button-styles {
+  background: #000;
+  border: 2px solid transparent;
+  border-radius: 5rem;
+  color: #fff;
+  width: 10rem;
+  height: 2.5em;
+  font-weight: 700;
+  position: relative;
+  left: -6rem;
+}
+
+.country-selector-styles {
+  width: 22rem;
+  height: 4.5rem;
+  margin: 10px 0
+}
+
+.newsletter-field {
+  width: 22rem !important;
+  margin-left: .3rem;
+}
+
+.newsletter-footer-allignment {
+  position: absolute;
+  left: 114rem;
+}
+
+.heading-about-us-styles {
+  margin: 10px;
+}
+
+.footer-list-styles {
+  margin: 10px;
+}
+
+.input-color-addition {
+  background-color: #00a86b;
 }
