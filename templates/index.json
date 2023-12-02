@@ -271,8 +271,8 @@
         "3cf2d7a9-ce5d-4b47-bd73-fa3ee834d5fd"
       ],
       "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
+        "title": "<strong>Popular Categories<\/strong>",
+        "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
         "color_scheme": "",
