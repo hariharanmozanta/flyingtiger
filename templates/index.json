@@ -43,7 +43,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "<strong>Shop new arrivals!<\/strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -71,7 +71,7 @@
     "d31e18c4-a546-4565-8757-44de30e2ec63": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "<strong>Popular Categories<\/strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -100,7 +100,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "<strong>Trending Now!<\/strong>",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
