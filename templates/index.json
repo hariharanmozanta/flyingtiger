@@ -68,6 +68,53 @@
         "padding_bottom": 20
       }
     },
+    "f16d735d-8591-4ac8-8832-5766ca167fb9": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all-products"
+          }
+        },
+        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leggings"
+          }
+        },
+        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "luxe-lounge"
+          }
+        },
+        "3cf2d7a9-ce5d-4b47-bd73-fa3ee834d5fd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jackets-coats"
+          }
+        }
+      },
+      "block_order": [
+        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-1",
+        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-2",
+        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-3",
+        "3cf2d7a9-ce5d-4b47-bd73-fa3ee834d5fd"
+      ],
+      "settings": {
+        "title": "<strong>Popular Categories<\/strong>",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "fb71d173-d05a-469b-8b19-250f4c08bfec": {
       "type": "featured-collection",
       "settings": {
@@ -207,61 +254,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "f16d735d-8591-4ac8-8832-5766ca167fb9": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "all-products"
-          }
-        },
-        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "leggings"
-          }
-        },
-        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "luxe-lounge"
-          }
-        },
-        "3cf2d7a9-ce5d-4b47-bd73-fa3ee834d5fd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "jackets-coats"
-          }
-        }
-      },
-      "block_order": [
-        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-1",
-        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-2",
-        "template--16989356294385__f16d735d-8591-4ac8-8832-5766ca167fb9-featured_collection-3",
-        "3cf2d7a9-ce5d-4b47-bd73-fa3ee834d5fd"
-      ],
-      "settings": {
-        "title": "<strong>Popular Categories<\/strong>",
-        "heading_size": "h2",
-        "image_ratio": "portrait",
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
+    "f16d735d-8591-4ac8-8832-5766ca167fb9",
     "fb71d173-d05a-469b-8b19-250f4c08bfec",
     "94263ebc-601b-4ceb-8dcd-a48db1fa566c",
-    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab",
-    "f16d735d-8591-4ac8-8832-5766ca167fb9"
+    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab"
   ]
 }
