@@ -564,6 +564,7 @@ hr {
   text-decoration: none;
   color: currentColor;
   display: block;
+  font-size: 1.5rem;
 }
 
 .placeholder {
@@ -1261,7 +1262,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:before,
 .shopify-payment-button [role='button']:before,
 .cart__dynamic-checkout-buttons [role='button']:before {
-  content: '';
+  /* content: ''; */
   /* position: absolute; */
   top: 0;
   right: 0;
@@ -1276,7 +1277,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
-  content: '';
+  /* content: ''; */
   /* position: absolute; */
   top: var(--buttons-border-width);
   right: var(--buttons-border-width);
@@ -3525,31 +3526,15 @@ details-disclosure>details {
   margin-left: 3rem;
 }
 
+
 .add-to-cart-styles {
   display: inline-block !important;
 }
 
 .add-to-cart-button-styles {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-box-pack: center;
-  border: none;
-  border-radius: 7px;
-  color: var(--primary-atc-color);
-  cursor: pointer;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-family: suisseintl-semibold, sans-serif;
-  font-weight: 500;
-  justify-content: center;
-  letter-spacing: normal;
-  line-height: 1.5rem;
-  margin: 10px 0;
-  text-align: center;
-  text-transform: none;
-  transition: all .3s ease;
-  white-space: nowrap;
+  position: relative;
+  top: -10.3rem;
+  left: 10rem;
 }
 
 .highlighting-styles {
@@ -3571,12 +3556,6 @@ details-disclosure>details {
   color: #fff;
   border-radius: 5rem;
 }
-
-.newsletter-styles {}
-
-.brand-information-styles {}
-
-.footer-heading-styles {}
 
 .subscribe-button-styles {
   background: #000;
@@ -3603,7 +3582,7 @@ details-disclosure>details {
 
 .newsletter-footer-allignment {
   position: absolute;
-  left: 88rem;
+  left: 75rem;
 }
 
 .heading-about-us-styles {
@@ -3617,7 +3596,6 @@ details-disclosure>details {
 .input-color-addition {
   background-color: #00a86b;
 }
-
 
 /* .slider-customization-1 {
   position: relative;
@@ -3634,3 +3612,40 @@ details-disclosure>details {
   border-radius: 30px;
   top: -35rem;
 } */
+
+.add-to-bag-render-styles {
+  position: relative;
+  top: -6rem;
+  margin-bottom: 10px;
+}
+
+/* .quick-view-button-styles {
+  display: none;
+} */
+
+.quick-view-button-styles {
+  display: block;
+  border: 1px solid white;
+  background-color: white;
+  color: black !important;
+  position: absolute;
+  top: -20rem;
+  width: 14.5rem !important;
+  min-width: 11rem !important;
+  margin-left: 4rem;
+  border-radius: 5px;
+}
+
+/* .product-card-styles {
+  width: 10rem;
+  height: 10rem;
+} */
+
+.card__media-2 {
+  border-radius: 50% !important;
+}
+
+.price-class {
+  font-weight: bolder;
+  font-size: 2rem !important;
+}
