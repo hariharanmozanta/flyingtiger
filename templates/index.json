@@ -261,25 +261,25 @@
         "template--16989356294385__bfcaa321-3b01-40a7-8753-6ffa8db5a58e-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "gifts-for-gamers"
           }
         },
         "template--16989356294385__bfcaa321-3b01-40a7-8753-6ffa8db5a58e-featured_collection-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "template--16989356294385__bfcaa321-3b01-40a7-8753-6ffa8db5a58e-featured_collection-3": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "men"
           }
         },
         "b97659f7-2778-4e1e-aa87-a8d73e86dac4": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "suits"
           }
         }
       },
