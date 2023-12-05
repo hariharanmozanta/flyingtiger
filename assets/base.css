@@ -94,7 +94,7 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: var(--page-width);
+  /* max-width: var(--page-width); */
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -3582,7 +3582,7 @@ details-disclosure>details {
 
 .newsletter-footer-allignment {
   position: absolute;
-  left: 75rem;
+  left: 112rem;
 }
 
 .heading-about-us-styles {
@@ -3615,7 +3615,7 @@ details-disclosure>details {
 
 .add-to-bag-render-styles {
   position: relative;
-  top: -6rem;
+  top: -4rem;
   margin-bottom: 10px;
 }
 
@@ -3643,6 +3643,8 @@ details-disclosure>details {
 
 .card__media-2 {
   border-radius: 50% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .price-class {

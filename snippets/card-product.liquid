@@ -207,7 +207,7 @@
             {%- endif -%}
           </div>
         </div>
-        {%- if false -%}
+        {%- if render_flag == true -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
               assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
