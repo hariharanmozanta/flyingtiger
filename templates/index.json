@@ -208,53 +208,6 @@
         "padding_bottom": 36
       }
     },
-    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Find Brilliant Gadgets<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop brilliant gadgets and awesome gifts<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-heading-1",
-        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-text-1",
-        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-button-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/rsz_2311-12-038.webp",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "bfcaa321-3b01-40a7-8753-6ffa8db5a58e": {
       "type": "collection-list",
       "blocks": {
@@ -304,6 +257,53 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Find Brilliant Gadgets<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop brilliant gadgets and awesome gifts<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-heading-1",
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-text-1",
+        "template--16989356294385__43b09357-61d7-48d1-a7a7-aa93b2f4d4ab-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rsz_2311-12-038.webp",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -312,7 +312,7 @@
     "f16d735d-8591-4ac8-8832-5766ca167fb9",
     "fb71d173-d05a-469b-8b19-250f4c08bfec",
     "94263ebc-601b-4ceb-8dcd-a48db1fa566c",
-    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab",
-    "bfcaa321-3b01-40a7-8753-6ffa8db5a58e"
+    "bfcaa321-3b01-40a7-8753-6ffa8db5a58e",
+    "43b09357-61d7-48d1-a7a7-aa93b2f4d4ab"
   ]
 }
